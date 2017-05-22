@@ -1,0 +1,13 @@
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\x64\Debug\OriRandoSeedGeneratorGUI.exe.config
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\x64\Debug\OriRandoSeedGeneratorGUI.exe.manifest
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\x64\Debug\OriRandoSeedGeneratorGUI.application
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\x64\Debug\OriRandoSeedGeneratorGUI.exe
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\x64\Debug\OriRandoSeedGeneratorGUI.pdb
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.SeedGen.resources
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.Properties.Resources.resources
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.csproj.GenerateResource.Cache
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.exe.manifest
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.application
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.exe
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\x64\Debug\OriRandoSeedGeneratorGUI.pdb

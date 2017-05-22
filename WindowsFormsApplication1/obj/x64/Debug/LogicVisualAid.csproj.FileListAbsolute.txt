@@ -1,0 +1,8 @@
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\bin\x64\Debug\WindowsFormsApplication1.exe.config
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\bin\x64\Debug\WindowsFormsApplication1.exe
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\bin\x64\Debug\WindowsFormsApplication1.pdb
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\obj\x64\Debug\LogicVisualAid.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\obj\x64\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\obj\x64\Debug\LogicVisualAid.csproj.GenerateResource.Cache
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\obj\x64\Debug\WindowsFormsApplication1.exe
+C:\Users\David\Source\Repos\OriDERandomizerInterface\WindowsFormsApplication1\obj\x64\Debug\WindowsFormsApplication1.pdb

@@ -1,0 +1,11 @@
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\Bin\Release\OriPickupMap.dll
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\Bin\Release\OriPickupMap.pdb
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\Bin\Release\AppManifest.xaml
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\Bin\Release\OriPickupMap.xap
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\Bin\Release\OriPickupMapTestPage.html
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\App.g.cs
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\MainPage.g.cs
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\OriPickupMap.g.resources
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\OriPickupMap.dll
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\OriPickupMap.pdb
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\Release\XapCacheFile.xml
