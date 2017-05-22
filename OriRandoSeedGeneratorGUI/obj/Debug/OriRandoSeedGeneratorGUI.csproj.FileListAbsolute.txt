@@ -1,0 +1,16 @@
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.exe.config
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.exe
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.pdb
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.SeedGen.resources
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.Properties.Resources.resources
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.csproj.GenerateResource.Cache
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.exe
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.pdb
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.exe.manifest
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.application
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.exe.manifest
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.application
+C:\gaming\Ori-Rando\seed_generator_interface\OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\Debug\OriRandoSeedGeneratorGUI.exe.config
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.exe
+C:\Users\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\obj\Debug\OriRandoSeedGeneratorGUI.pdb
