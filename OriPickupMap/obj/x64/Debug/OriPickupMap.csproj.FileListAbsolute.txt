@@ -1,7 +1,0 @@
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\bin\x64\Debug\OriPickupMap.dll
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\bin\x64\Debug\OriPickupMap.pdb
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\x64\Debug\App.g.cs
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\x64\Debug\MainPage.g.cs
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\x64\Debug\OriPickupMap.g.resources
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\x64\Debug\OriPickupMap.dll
-C:\Users\David\Source\Repos\OriDERandomizerInterface\OriPickupMap\obj\x64\Debug\OriPickupMap.pdb

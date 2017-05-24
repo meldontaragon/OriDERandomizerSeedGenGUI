@@ -236,7 +236,7 @@ for mode in modeDict.keys():
     modes = modeDict[mode]
     #this loops through a bunch of seeds
     #previously was range(0,10000):
-    for seed in range(0,1):
+    for seed in range(64362,64363):
         seed
 
         random.seed(mode + str(seed))
