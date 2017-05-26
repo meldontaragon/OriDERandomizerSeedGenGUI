@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OriRandoSeedGeneratorGUI", "OriRandoSeedGeneratorGUI\OriRandoSeedGeneratorGUI.csproj", "{FD0E8EB8-A8B1-453D-96A2-0A6E6B92498F}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonSeedGenerator", "PythonSeedGenerator\PythonSeedGenerator.pyproj", "{1F835837-DFEF-40F6-9FFC-3D615B78D012}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{FD0E8EB8-A8B1-453D-96A2-0A6E6B92498F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD0E8EB8-A8B1-453D-96A2-0A6E6B92498F}.Release|x64.ActiveCfg = Release|x64
 		{FD0E8EB8-A8B1-453D-96A2-0A6E6B92498F}.Release|x64.Build.0 = Release|x64
-		{1F835837-DFEF-40F6-9FFC-3D615B78D012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F835837-DFEF-40F6-9FFC-3D615B78D012}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1F835837-DFEF-40F6-9FFC-3D615B78D012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F835837-DFEF-40F6-9FFC-3D615B78D012}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
