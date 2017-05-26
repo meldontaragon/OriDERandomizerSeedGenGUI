@@ -23,6 +23,7 @@ namespace OriRandoSeedGeneratorGUI
             Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 
             Text = this.Text.ToString() + " - v" + v.Major + "." + v.Minor + "." + v.Build;
+            WriteToLog("Program starting up.");
         }
 
         //start of radio buttom group
@@ -311,6 +312,9 @@ namespace OriRandoSeedGeneratorGUI
             string python_call, string_logic, string_options, string_seed;
             string move_rando;
             string move_spoiler;
+            string pathname;
+
+            WriteToLog("Starting seed generation...");
 
             //python_call = "/C python seed_generator.py /b ";
             python_call = "python seed_generator.py ";
@@ -318,12 +322,22 @@ namespace OriRandoSeedGeneratorGUI
             string_options = generate_options_string();
             string_seed = generate_seed_string();
 
+            WriteToLog("Logic flags: " + string_logic);
+            WriteToLog("Option flags: " + string_options);
+            WriteToLog("Seed flags: " + string_seed);
+
             python_call += string_logic + string_options + string_seed;
 
-            move_rando = "move randomizer*.dat " + text_box_directory.Text.ToString() + "/";
-            move_spoiler = "move spoiler* " + text_box_directory.Text.ToString() + "/";
+            WriteToLog("Save directory: " + text_box_directory.Text.ToString());
 
-            MessageBox.Show(python_call, "Python Command Line");
+            pathname = "\"" + text_box_directory.Text.ToString() + "/" + "\"";
+
+            WriteToLog("Modified directory name: " + pathname);
+
+            move_rando = "move randomizer*.dat " + pathname;
+            move_spoiler = "move spoiler* " + pathname;
+
+            //MessageBox.Show(python_call, "Python Command Line");
 
             Process proc = new Process();
             ProcessStartInfo start_info = new ProcessStartInfo();
@@ -333,19 +347,23 @@ namespace OriRandoSeedGeneratorGUI
             start_info.RedirectStandardInput = true;
             start_info.RedirectStandardOutput = true;
 
+            start_info.CreateNoWindow = true;
+
             start_info.UseShellExecute = false;
 
             proc.StartInfo = start_info;
 
             proc.Start();
 
+            WriteToLog("Calling python with: `" + python_call + "`");
             proc.StandardInput.WriteLine(python_call);
             proc.StandardInput.Flush();
 
-
+            WriteToLog("Moving files: `" + move_rando + "`");
             proc.StandardInput.WriteLine(move_rando);
             proc.StandardInput.Flush();
 
+            WriteToLog("Moving files: `" + move_spoiler + "`");
             proc.StandardInput.WriteLine(move_spoiler);
             proc.StandardInput.Flush();
 
@@ -494,6 +512,18 @@ namespace OriRandoSeedGeneratorGUI
             {
                 text_box_directory.Text = old;
             }
+        }
+
+        private static string log_file = "OutputLog.txt";
+    
+        private static void WriteToLog(string line)
+        {
+            DateTime utcDate = DateTime.UtcNow;
+            System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-GB");
+
+            string log_text = utcDate.ToString(culture) + " -- " + line + "\n";
+
+            File.AppendAllText(log_file, log_text);
         }
     }
 }

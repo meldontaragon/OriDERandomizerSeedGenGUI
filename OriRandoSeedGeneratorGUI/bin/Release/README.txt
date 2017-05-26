@@ -16,6 +16,7 @@ areas.xml).
 
 ## Prerequisites
 Python 2.7 (https://www.python.org/downloads/release/python-2713/)
+.NET Framefork 4.5 or newer (https://www.microsoft.com/en-us/download/details.aspx?id=40779)
 
 ## Thanks
 

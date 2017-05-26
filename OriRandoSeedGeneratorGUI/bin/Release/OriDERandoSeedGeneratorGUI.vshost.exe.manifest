@@ -4,7 +4,7 @@
   <description asmv2:iconFile="ori.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.1.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="OriDERandoSeedGeneratorGUI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OriDERandoSeedGeneratorGUI.exe" size="32728">
-      <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OriDERandoSeedGeneratorGUI.exe" size="33240">
+      <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qrwY8gLhlhrkQ9Uf5jA5psWdLYRz5SthEgkyhoFg3/w=</dsig:DigestValue>
+        <dsig:DigestValue>i99aUZh0m06EIBAwsoZkT7FnododYhrEs8O/XVixmx4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -81,13 +81,13 @@
       <dsig:DigestValue>YyXx11OQ8Y9qQaMsAPfgWQIUIJMPT4Sw3i2UQTU2sRM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="README.txt" size="705">
+  <file name="README.txt" size="799">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R29VOiTNyiqf4KaC7mC4Ay5HGjR4b2W9sehfpRJuhw8=</dsig:DigestValue>
+      <dsig:DigestValue>KGAZ/Bw7kMiADXRw520TVZTdRSKx5lO6BNMjoDsg//w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="seed_generator.py" size="17758">
@@ -97,6 +97,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>RCgOrxBW4E2iRoEZxvMMLpZvoYs2Dh73EHGuTQU4jsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDo.txt" size="366">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sQnvgOjR3kJ89UGkFNJy8fWeIAhBmR9KwCBqs9b+PnM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
