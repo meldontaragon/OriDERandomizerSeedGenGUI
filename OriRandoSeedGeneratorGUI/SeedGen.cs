@@ -389,7 +389,7 @@ namespace OriRandoSeedGeneratorGUI
             {
                 logic_call = "--logic glitched ";
             }
-            else if (rb_normal.Checked)
+            else if (rb_custom.Checked)
             {
                 logic_call = "--custom-logic normal";
 

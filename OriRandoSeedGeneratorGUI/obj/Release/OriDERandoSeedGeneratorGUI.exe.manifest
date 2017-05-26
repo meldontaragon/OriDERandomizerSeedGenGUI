@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2pP/egJpd+sjwnt8sP++OrIyvLzvjyLrWdGOHjrm0Ko=</dsig:DigestValue>
+        <dsig:DigestValue>4VLr0EkjGTlOdwN3Lz4oZtvlhl1zS4ywQ2SKwV/X4Z8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -81,13 +81,13 @@
       <dsig:DigestValue>YyXx11OQ8Y9qQaMsAPfgWQIUIJMPT4Sw3i2UQTU2sRM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="README.txt" size="697">
+  <file name="README.txt" size="705">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>e6jeRbMj/OCEVqmKWxiq/q+5cZYItdZ41vMfSYzMPrA=</dsig:DigestValue>
+      <dsig:DigestValue>R29VOiTNyiqf4KaC7mC4Ay5HGjR4b2W9sehfpRJuhw8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="seed_generator.py" size="17758">
