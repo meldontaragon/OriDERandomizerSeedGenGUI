@@ -1,9 +1,22 @@
 ﻿# Ori DE: Seed Generator GUI
 
+## Help
+For any questions or issues please post here:
+https://github.com/david-c-miller/OriDERandomizerInterface/issues 
+
 ## Description
 This is a simple GUI that interfaces with the seed generator for the 
 \Ori DE Randomizer (https://github.com/sigmasin/OriDERandomizer). This 
-requires the current version of seed generator (seed_gen.zip on the 
-releases page). 
+uses the current version of seed generator (seed_gen.zip on the 
+releases page). This is included in the release (seed_generator.py and 
+areas.xml).
 
-**THE CURRENT VERSION IS v0.6**
+**THE CURRENT VERSION IS v0.7**
+
+## Prerequisites
+Python 2.7 (https://www.python.org/downloads/release/python-2713/)
+
+## Thanks
+
+Thanks to SigmaSin (https://github.com/sigmasin) for creating the Ori DE 
+Randomizer!

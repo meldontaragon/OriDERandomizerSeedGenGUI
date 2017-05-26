@@ -19,6 +19,10 @@ namespace OriRandoSeedGeneratorGUI
             InitializeComponent();
             DisableCheckBoxes();
             text_box_directory.Text = Application.StartupPath.ToString();
+
+            Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+
+            Text = this.Text.ToString() + " - v" + v.Major + "." + v.Minor + "." + v.Build;
         }
 
         //start of radio buttom group

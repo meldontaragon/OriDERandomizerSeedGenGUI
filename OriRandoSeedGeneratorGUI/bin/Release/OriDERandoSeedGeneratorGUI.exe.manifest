@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="OriRandoSeedGeneratorGUI.exe" version="0.7.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="OriDERandoSeedGeneratorGUI.exe" version="0.7.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="ori.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="OriRandoSeedGeneratorGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-    <commandLine file="OriRandoSeedGeneratorGUI.exe" parameters="" />
+    <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="OriDERandoSeedGeneratorGUI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OriRandoSeedGeneratorGUI.exe" size="30680">
-      <assemblyIdentity name="OriRandoSeedGeneratorGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OriDERandoSeedGeneratorGUI.exe" size="32728">
+      <assemblyIdentity name="OriDERandoSeedGeneratorGUI" version="0.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/csY3gCokj/I1vNqg5+921DA7DC1ikV9hVloPdiar1E=</dsig:DigestValue>
+        <dsig:DigestValue>2pP/egJpd+sjwnt8sP++OrIyvLzvjyLrWdGOHjrm0Ko=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,22 +72,22 @@
       <dsig:DigestValue>gqlbsSh3A3CSzGhjNgci1FToW74KtI3nwoAW5LAeEi0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="OriRandoSeedGeneratorGUI.exe.config" size="189">
+  <file name="OriDERandoSeedGeneratorGUI.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+      <dsig:DigestValue>YyXx11OQ8Y9qQaMsAPfgWQIUIJMPT4Sw3i2UQTU2sRM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="README.txt" size="316">
+  <file name="README.txt" size="697">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gaELCkREBq8VkpBMvBAqfpvVixIKm4xdnrID1A9Bwfk=</dsig:DigestValue>
+      <dsig:DigestValue>e6jeRbMj/OCEVqmKWxiq/q+5cZYItdZ41vMfSYzMPrA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="seed_generator.py" size="17758">
