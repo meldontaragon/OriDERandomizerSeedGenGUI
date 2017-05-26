@@ -146,9 +146,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ori.ico" />
-    <Content Include="README.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="seed_generator.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

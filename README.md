@@ -1,4 +1,4 @@
-﻿# Ori DE: Seed Generator GUI
+# Ori DE: Seed Generator GUI
 v0.7.0
 
 ## Help
