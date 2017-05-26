@@ -1,1 +1,0 @@
-E:\David\Source\Repos\OriDERandomizerInterface\OriRandoSeedGeneratorGUI\bin\Release\OriDERandoSeedGeneratorGUI.exe.config
