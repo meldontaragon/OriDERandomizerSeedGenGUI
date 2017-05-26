@@ -7,8 +7,8 @@
     <ProjectGuid>{FD0E8EB8-A8B1-453D-96A2-0A6E6B92498F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OriRandoSeedGeneratorGUI</RootNamespace>
-    <AssemblyName>OriRandoSeedGeneratorGUI</AssemblyName>
+    <RootNamespace>OriDERandoSeedGeneratorGUI</RootNamespace>
+    <AssemblyName>OriDERandoSeedGeneratorGUI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -28,8 +28,9 @@
     <PublisherName>David Miller</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>6</ApplicationRevision>
-    <ApplicationVersion>0.7.0.%2a</ApplicationVersion>
+    <ApplicationVersion>0.7.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
