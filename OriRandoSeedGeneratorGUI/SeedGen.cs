@@ -14,6 +14,8 @@ namespace OriRandoSeedGeneratorGUI
 {
     public partial class SeedGen : Form
     {
+        private Random rand;
+
         public SeedGen()
         {
             InitializeComponent();
@@ -24,6 +26,8 @@ namespace OriRandoSeedGeneratorGUI
 
             Text = this.Text.ToString() + " - v" + v.Major + "." + v.Minor + "." + v.Build;
             WriteToLog("Program starting up.");
+
+            rand = new Random(DateTime.Now.Second);
         }
 
         //start of radio buttom group
@@ -301,6 +305,12 @@ namespace OriRandoSeedGeneratorGUI
             cb_0xp.Enabled = true;
         }
         
+        private void button_random_Click(object sender, EventArgs e)
+        {
+            int next = rand.Next(1, 999999999);
+            numeric_seed_number.Value = next;
+        }
+        
         private void button_generate_Click(object sender, EventArgs e)
         {
             generate_seed();
@@ -337,6 +347,11 @@ namespace OriRandoSeedGeneratorGUI
             move_rando = "move randomizer*.dat " + pathname;
             move_spoiler = "move spoiler* " + pathname;
 
+            if (!(CheckDirectory(text_box_directory.Text.ToString())))
+            {
+                return;
+            }
+
             //MessageBox.Show(python_call, "Python Command Line");
 
             Process proc = new Process();
@@ -369,6 +384,8 @@ namespace OriRandoSeedGeneratorGUI
 
             proc.StandardInput.Close();
             proc.WaitForExit();
+
+            MessageBox.Show("Seed Created.", "Success");
         }
         
         private string generate_logic_string()
@@ -524,6 +541,22 @@ namespace OriRandoSeedGeneratorGUI
             string log_text = utcDate.ToString(culture) + " -- " + line + "\n";
 
             File.AppendAllText(log_file, log_text);
+        }
+
+        private bool CheckDirectory(string dir)
+        {
+            if (System.IO.Directory.Exists(dir))
+                return true;
+            else
+            {
+                MessageBox.Show("Director is invalid.", "Error");
+                return false;
+            }
+        }
+
+        private void link_help_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/david-c-miller/OriDERandomizerInterface/issues");
         }
     }
 }
