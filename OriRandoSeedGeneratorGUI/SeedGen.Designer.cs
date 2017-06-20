@@ -70,6 +70,11 @@
             this.link_help = new System.Windows.Forms.LinkLabel();
             this.numeric_seed_count = new System.Windows.Forms.NumericUpDown();
             this.label_count = new System.Windows.Forms.Label();
+            this.cb_starved = new System.Windows.Forms.CheckBox();
+            this.cb_limitkeys = new System.Windows.Forms.CheckBox();
+            this.cb_shards = new System.Windows.Forms.CheckBox();
+            this.cb_analysis = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_count)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +122,7 @@
             // cb_extended
             // 
             this.cb_extended.AutoSize = true;
-            this.cb_extended.Location = new System.Drawing.Point(268, 95);
+            this.cb_extended.Location = new System.Drawing.Point(128, 233);
             this.cb_extended.Name = "cb_extended";
             this.cb_extended.Size = new System.Drawing.Size(71, 17);
             this.cb_extended.TabIndex = 5;
@@ -127,7 +132,7 @@
             // cb_timed
             // 
             this.cb_timed.AutoSize = true;
-            this.cb_timed.Location = new System.Drawing.Point(268, 141);
+            this.cb_timed.Location = new System.Drawing.Point(128, 279);
             this.cb_timed.Name = "cb_timed";
             this.cb_timed.Size = new System.Drawing.Size(84, 17);
             this.cb_timed.TabIndex = 6;
@@ -137,7 +142,7 @@
             // cb_hard_lure
             // 
             this.cb_hard_lure.AutoSize = true;
-            this.cb_hard_lure.Location = new System.Drawing.Point(268, 164);
+            this.cb_hard_lure.Location = new System.Drawing.Point(128, 302);
             this.cb_hard_lure.Name = "cb_hard_lure";
             this.cb_hard_lure.Size = new System.Drawing.Size(73, 17);
             this.cb_hard_lure.TabIndex = 7;
@@ -147,7 +152,7 @@
             // cb_hard_dboost
             // 
             this.cb_hard_dboost.AutoSize = true;
-            this.cb_hard_dboost.Location = new System.Drawing.Point(268, 186);
+            this.cb_hard_dboost.Location = new System.Drawing.Point(128, 325);
             this.cb_hard_dboost.Name = "cb_hard_dboost";
             this.cb_hard_dboost.Size = new System.Drawing.Size(122, 17);
             this.cb_hard_dboost.TabIndex = 8;
@@ -157,7 +162,7 @@
             // cb_glitched
             // 
             this.cb_glitched.AutoSize = true;
-            this.cb_glitched.Location = new System.Drawing.Point(268, 209);
+            this.cb_glitched.Location = new System.Drawing.Point(128, 348);
             this.cb_glitched.Name = "cb_glitched";
             this.cb_glitched.Size = new System.Drawing.Size(65, 17);
             this.cb_glitched.TabIndex = 9;
@@ -286,7 +291,7 @@
             this.cb_mapstone.Checked = true;
             this.cb_mapstone.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_mapstone.Enabled = false;
-            this.cb_mapstone.Location = new System.Drawing.Point(128, 301);
+            this.cb_mapstone.Location = new System.Drawing.Point(285, 256);
             this.cb_mapstone.Name = "cb_mapstone";
             this.cb_mapstone.Size = new System.Drawing.Size(83, 17);
             this.cb_mapstone.TabIndex = 25;
@@ -299,7 +304,7 @@
             this.cb_extra_pickups.Checked = true;
             this.cb_extra_pickups.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_extra_pickups.Enabled = false;
-            this.cb_extra_pickups.Location = new System.Drawing.Point(128, 278);
+            this.cb_extra_pickups.Location = new System.Drawing.Point(285, 233);
             this.cb_extra_pickups.Name = "cb_extra_pickups";
             this.cb_extra_pickups.Size = new System.Drawing.Size(91, 17);
             this.cb_extra_pickups.TabIndex = 26;
@@ -312,7 +317,7 @@
             this.cb_plants.Checked = true;
             this.cb_plants.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_plants.Enabled = false;
-            this.cb_plants.Location = new System.Drawing.Point(128, 255);
+            this.cb_plants.Location = new System.Drawing.Point(285, 210);
             this.cb_plants.Name = "cb_plants";
             this.cb_plants.Size = new System.Drawing.Size(96, 17);
             this.cb_plants.TabIndex = 27;
@@ -366,7 +371,7 @@
             // cb_ext_dboost
             // 
             this.cb_ext_dboost.AutoSize = true;
-            this.cb_ext_dboost.Location = new System.Drawing.Point(268, 118);
+            this.cb_ext_dboost.Location = new System.Drawing.Point(128, 255);
             this.cb_ext_dboost.Name = "cb_ext_dboost";
             this.cb_ext_dboost.Size = new System.Drawing.Size(144, 17);
             this.cb_ext_dboost.TabIndex = 33;
@@ -376,7 +381,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 237);
+            this.label2.Location = new System.Drawing.Point(282, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 34;
@@ -386,7 +391,7 @@
             // 
             this.cb_hard.AutoSize = true;
             this.cb_hard.Enabled = false;
-            this.cb_hard.Location = new System.Drawing.Point(268, 255);
+            this.cb_hard.Location = new System.Drawing.Point(285, 94);
             this.cb_hard.Name = "cb_hard";
             this.cb_hard.Size = new System.Drawing.Size(49, 17);
             this.cb_hard.TabIndex = 35;
@@ -397,7 +402,7 @@
             // 
             this.cb_0xp.AutoSize = true;
             this.cb_0xp.Enabled = false;
-            this.cb_0xp.Location = new System.Drawing.Point(268, 301);
+            this.cb_0xp.Location = new System.Drawing.Point(285, 140);
             this.cb_0xp.Name = "cb_0xp";
             this.cb_0xp.Size = new System.Drawing.Size(65, 17);
             this.cb_0xp.TabIndex = 36;
@@ -408,7 +413,7 @@
             // 
             this.cb_ohko.AutoSize = true;
             this.cb_ohko.Enabled = false;
-            this.cb_ohko.Location = new System.Drawing.Point(268, 278);
+            this.cb_ohko.Location = new System.Drawing.Point(285, 117);
             this.cb_ohko.Name = "cb_ohko";
             this.cb_ohko.Size = new System.Drawing.Size(57, 17);
             this.cb_ohko.TabIndex = 37;
@@ -418,7 +423,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 237);
+            this.label5.Location = new System.Drawing.Point(282, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 38;
@@ -466,14 +471,13 @@
             // link_help
             // 
             this.link_help.AutoSize = true;
-            this.link_help.Location = new System.Drawing.Point(369, 68);
+            this.link_help.Location = new System.Drawing.Point(12, 352);
             this.link_help.Name = "link_help";
             this.link_help.Size = new System.Drawing.Size(37, 13);
             this.link_help.TabIndex = 48;
             this.link_help.TabStop = true;
             this.link_help.Text = "Issues";
             this.link_help.VisitedLinkColor = System.Drawing.Color.Blue;
-            this.link_help.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_help_LinkClicked);
             // 
             // numeric_seed_count
             // 
@@ -506,11 +510,69 @@
             this.label_count.TabIndex = 49;
             this.label_count.Text = "Count";
             // 
+            // cb_starved
+            // 
+            this.cb_starved.AutoSize = true;
+            this.cb_starved.Enabled = false;
+            this.cb_starved.Location = new System.Drawing.Point(285, 279);
+            this.cb_starved.Name = "cb_starved";
+            this.cb_starved.Size = new System.Drawing.Size(63, 17);
+            this.cb_starved.TabIndex = 51;
+            this.cb_starved.Text = "Starved";
+            this.cb_starved.UseVisualStyleBackColor = true;
+            // 
+            // cb_limitkeys
+            // 
+            this.cb_limitkeys.AutoSize = true;
+            this.cb_limitkeys.Enabled = false;
+            this.cb_limitkeys.Location = new System.Drawing.Point(285, 325);
+            this.cb_limitkeys.Name = "cb_limitkeys";
+            this.cb_limitkeys.Size = new System.Drawing.Size(73, 17);
+            this.cb_limitkeys.TabIndex = 52;
+            this.cb_limitkeys.Text = "Limit Keys";
+            this.cb_limitkeys.UseVisualStyleBackColor = true;
+            // 
+            // cb_shards
+            // 
+            this.cb_shards.AutoSize = true;
+            this.cb_shards.Enabled = false;
+            this.cb_shards.Location = new System.Drawing.Point(285, 302);
+            this.cb_shards.Name = "cb_shards";
+            this.cb_shards.Size = new System.Drawing.Size(59, 17);
+            this.cb_shards.TabIndex = 53;
+            this.cb_shards.Text = "Shards";
+            this.cb_shards.UseVisualStyleBackColor = true;
+            // 
+            // cb_analysis
+            // 
+            this.cb_analysis.AutoSize = true;
+            this.cb_analysis.Enabled = false;
+            this.cb_analysis.Location = new System.Drawing.Point(12, 325);
+            this.cb_analysis.Name = "cb_analysis";
+            this.cb_analysis.Size = new System.Drawing.Size(64, 17);
+            this.cb_analysis.TabIndex = 54;
+            this.cb_analysis.Text = "Analysis";
+            this.cb_analysis.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 309);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 13);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Other Options";
+            // 
             // SeedGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 331);
+            this.ClientSize = new System.Drawing.Size(418, 380);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cb_analysis);
+            this.Controls.Add(this.cb_shards);
+            this.Controls.Add(this.cb_limitkeys);
+            this.Controls.Add(this.cb_starved);
             this.Controls.Add(this.numeric_seed_count);
             this.Controls.Add(this.label_count);
             this.Controls.Add(this.link_help);
@@ -553,8 +615,8 @@
             this.Controls.Add(this.cb_speed);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(434, 370);
-            this.MinimumSize = new System.Drawing.Size(434, 370);
+            this.MaximumSize = new System.Drawing.Size(434, 419);
+            this.MinimumSize = new System.Drawing.Size(434, 419);
             this.Name = "SeedGen";
             this.Text = "Ori DE Rando: Seed Generator";
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_number)).EndInit();
@@ -606,6 +668,11 @@
         private System.Windows.Forms.LinkLabel link_help;
         private System.Windows.Forms.NumericUpDown numeric_seed_count;
         private System.Windows.Forms.Label label_count;
+        private System.Windows.Forms.CheckBox cb_starved;
+        private System.Windows.Forms.CheckBox cb_limitkeys;
+        private System.Windows.Forms.CheckBox cb_shards;
+        private System.Windows.Forms.CheckBox cb_analysis;
+        private System.Windows.Forms.Label label6;
     }
 }
 

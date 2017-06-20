@@ -27,8 +27,8 @@
     <ErrorReportUrl>https://github.com/david-c-miller/OriDERandomizerInterface/issues</ErrorReportUrl>
     <PublisherName>David Miller</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>0.7.2.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -88,7 +88,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ori.ico</ApplicationIcon>
+    <ApplicationIcon>ori_yellow.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>OriRandoSeedGeneratorGUI.Program</StartupObject>
@@ -149,7 +149,7 @@
     <Content Include="areas.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ori.ico" />
+    <Content Include="ori_yellow.ico" />
     <Content Include="seed_generator.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -169,16 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="areas.xml">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="ori.ico">
       <Visible>False</Visible>
       <Group>
       </Group>

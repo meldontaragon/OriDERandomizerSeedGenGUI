@@ -187,7 +187,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_plants.Checked = true;
             cb_mapstone.Checked = true;
 
-            cb_hard.Checked = false;
+            cb_hard.Checked = true;
             cb_ohko.Checked = true;
             cb_0xp.Checked = false;
 
@@ -214,8 +214,8 @@ namespace OriRandoSeedGeneratorGUI
             cb_plants.Checked = true;
             cb_mapstone.Checked = true;
 
-            cb_hard.Checked = false;
-            cb_ohko.Checked = false;
+            cb_hard.Checked = true;
+            cb_ohko.Checked = true;
             cb_0xp.Checked = true;
 
             DisableCheckBoxes();
@@ -274,6 +274,9 @@ namespace OriRandoSeedGeneratorGUI
             cb_mapstone.Enabled = false;
             cb_plants.Enabled = false;
             cb_extra_pickups.Enabled = false;
+            cb_starved.Enabled = false;
+            cb_limitkeys.Enabled = false;
+            cb_shards.Enabled = false;
 
             cb_hard.Enabled = false;
             cb_ohko.Enabled = false;
@@ -296,9 +299,14 @@ namespace OriRandoSeedGeneratorGUI
             cb_hard_lure.Enabled = true;
             cb_glitched.Enabled = true;
 
+            //not enabled by Sigma yet
             cb_mapstone.Enabled = false;
+
             cb_plants.Enabled = true;
             cb_extra_pickups.Enabled = true;
+            cb_starved.Enabled = true;
+            cb_limitkeys.Enabled = true;
+            cb_shards.Enabled = true;
 
             cb_hard.Enabled = true;
             cb_ohko.Enabled = true;
@@ -351,8 +359,6 @@ namespace OriRandoSeedGeneratorGUI
             {
                 return;
             }
-
-            //MessageBox.Show(python_call, "Python Command Line");
 
             Process proc = new Process();
             ProcessStartInfo start_info = new ProcessStartInfo();
@@ -507,6 +513,22 @@ namespace OriRandoSeedGeneratorGUI
             {
                 options_call += "--zeroxp ";
             }
+            if (cb_starved.Checked)
+            {
+                options_call += "--starved ";
+            }
+            if (cb_shards.Checked)
+            {
+                options_call += "--shards ";
+            }
+            if (cb_limitkeys.Checked)
+            {
+                options_call += "--limitkeys ";
+            }
+            if (cb_analysis.Checked)
+            {
+                options_call += "--analysis ";
+            }
 
             return options_call;
         }
@@ -549,7 +571,7 @@ namespace OriRandoSeedGeneratorGUI
                 return true;
             else
             {
-                MessageBox.Show("Director is invalid.", "Error");
+                MessageBox.Show("Directory is invalid.", "Error");
                 return false;
             }
         }
