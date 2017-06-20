@@ -27,7 +27,7 @@
     <ErrorReportUrl>https://github.com/david-c-miller/OriDERandomizerInterface/issues</ErrorReportUrl>
     <PublisherName>David Miller</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
