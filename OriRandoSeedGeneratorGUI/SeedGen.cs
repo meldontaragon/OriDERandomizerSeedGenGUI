@@ -578,7 +578,7 @@ namespace OriRandoSeedGeneratorGUI
 
         private void link_help_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/david-c-miller/OriDERandomizerInterface/issues");
+            System.Diagnostics.Process.Start("https://github.com/david-c-miller/OriDERandomizerSeedGenGUI/issues");
         }
     }
 }

@@ -7,7 +7,7 @@ uses the current version of seed generator (seed_gen.zip on the
 releases page). This is included in the release (seed_generator.py and 
 areas.xml).
 
-**THE CURRENT VERSION IS v0.7**
+**THE CURRENT VERSION IS v1.0**
 
 ## Prerequisites
 + Python 2.7 (https://www.python.org/downloads/release/python-2713/)
@@ -17,7 +17,7 @@ areas.xml).
 
 ## Help
 For any questions or issues please post here:
-https://github.com/david-c-miller/OriDERandomizerInterface/issues 
+https://github.com/david-c-miller/OriDERandomizerSeedGenGUI/issues
 
 ## Thanks
 
