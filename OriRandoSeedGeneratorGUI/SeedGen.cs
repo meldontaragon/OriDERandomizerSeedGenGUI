@@ -580,6 +580,18 @@ namespace OriRandoSeedGeneratorGUI
         {
             System.Diagnostics.Process.Start("https://github.com/david-c-miller/OriDERandomizerSeedGenGUI/issues");
         }
+
+        private void cb_shards_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_shards.Checked)
+                cb_limitkeys.Checked = false;
+        }
+
+        private void cb_limitkeys_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_limitkeys.Checked)
+                cb_shards.Checked = false;
+        }
     }
 }
 

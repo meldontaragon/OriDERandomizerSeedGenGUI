@@ -71,10 +71,11 @@
             this.numeric_seed_count = new System.Windows.Forms.NumericUpDown();
             this.label_count = new System.Windows.Forms.Label();
             this.cb_starved = new System.Windows.Forms.CheckBox();
-            this.cb_limitkeys = new System.Windows.Forms.CheckBox();
-            this.cb_shards = new System.Windows.Forms.CheckBox();
             this.cb_analysis = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cb_limitkeys = new System.Windows.Forms.CheckBox();
+            this.cb_shards = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_count)).BeginInit();
             this.SuspendLayout();
@@ -291,7 +292,7 @@
             this.cb_mapstone.Checked = true;
             this.cb_mapstone.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_mapstone.Enabled = false;
-            this.cb_mapstone.Location = new System.Drawing.Point(285, 256);
+            this.cb_mapstone.Location = new System.Drawing.Point(285, 233);
             this.cb_mapstone.Name = "cb_mapstone";
             this.cb_mapstone.Size = new System.Drawing.Size(83, 17);
             this.cb_mapstone.TabIndex = 25;
@@ -304,7 +305,7 @@
             this.cb_extra_pickups.Checked = true;
             this.cb_extra_pickups.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_extra_pickups.Enabled = false;
-            this.cb_extra_pickups.Location = new System.Drawing.Point(285, 233);
+            this.cb_extra_pickups.Location = new System.Drawing.Point(285, 210);
             this.cb_extra_pickups.Name = "cb_extra_pickups";
             this.cb_extra_pickups.Size = new System.Drawing.Size(91, 17);
             this.cb_extra_pickups.TabIndex = 26;
@@ -317,7 +318,7 @@
             this.cb_plants.Checked = true;
             this.cb_plants.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_plants.Enabled = false;
-            this.cb_plants.Location = new System.Drawing.Point(285, 210);
+            this.cb_plants.Location = new System.Drawing.Point(285, 187);
             this.cb_plants.Name = "cb_plants";
             this.cb_plants.Size = new System.Drawing.Size(96, 17);
             this.cb_plants.TabIndex = 27;
@@ -381,7 +382,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 192);
+            this.label2.Location = new System.Drawing.Point(282, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 34;
@@ -514,34 +515,12 @@
             // 
             this.cb_starved.AutoSize = true;
             this.cb_starved.Enabled = false;
-            this.cb_starved.Location = new System.Drawing.Point(285, 279);
+            this.cb_starved.Location = new System.Drawing.Point(285, 256);
             this.cb_starved.Name = "cb_starved";
             this.cb_starved.Size = new System.Drawing.Size(63, 17);
             this.cb_starved.TabIndex = 51;
             this.cb_starved.Text = "Starved";
             this.cb_starved.UseVisualStyleBackColor = true;
-            // 
-            // cb_limitkeys
-            // 
-            this.cb_limitkeys.AutoSize = true;
-            this.cb_limitkeys.Enabled = false;
-            this.cb_limitkeys.Location = new System.Drawing.Point(285, 325);
-            this.cb_limitkeys.Name = "cb_limitkeys";
-            this.cb_limitkeys.Size = new System.Drawing.Size(73, 17);
-            this.cb_limitkeys.TabIndex = 52;
-            this.cb_limitkeys.Text = "Limit Keys";
-            this.cb_limitkeys.UseVisualStyleBackColor = true;
-            // 
-            // cb_shards
-            // 
-            this.cb_shards.AutoSize = true;
-            this.cb_shards.Enabled = false;
-            this.cb_shards.Location = new System.Drawing.Point(285, 302);
-            this.cb_shards.Name = "cb_shards";
-            this.cb_shards.Size = new System.Drawing.Size(59, 17);
-            this.cb_shards.TabIndex = 53;
-            this.cb_shards.Text = "Shards";
-            this.cb_shards.UseVisualStyleBackColor = true;
             // 
             // cb_analysis
             // 
@@ -563,11 +542,45 @@
             this.label6.TabIndex = 55;
             this.label6.Text = "Other Options";
             // 
+            // cb_limitkeys
+            // 
+            this.cb_limitkeys.AutoSize = true;
+            this.cb_limitkeys.Enabled = false;
+            this.cb_limitkeys.Location = new System.Drawing.Point(285, 348);
+            this.cb_limitkeys.Name = "cb_limitkeys";
+            this.cb_limitkeys.Size = new System.Drawing.Size(73, 17);
+            this.cb_limitkeys.TabIndex = 52;
+            this.cb_limitkeys.Text = "Limit Keys";
+            this.cb_limitkeys.UseVisualStyleBackColor = true;
+            this.cb_limitkeys.CheckedChanged += new System.EventHandler(this.cb_limitkeys_CheckedChanged);
+            // 
+            // cb_shards
+            // 
+            this.cb_shards.AutoSize = true;
+            this.cb_shards.Enabled = false;
+            this.cb_shards.Location = new System.Drawing.Point(285, 325);
+            this.cb_shards.Name = "cb_shards";
+            this.cb_shards.Size = new System.Drawing.Size(59, 17);
+            this.cb_shards.TabIndex = 53;
+            this.cb_shards.Text = "Shards";
+            this.cb_shards.UseVisualStyleBackColor = true;
+            this.cb_shards.CheckedChanged += new System.EventHandler(this.cb_shards_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(282, 302);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Key Options";
+            // 
             // SeedGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 380);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_analysis);
             this.Controls.Add(this.cb_shards);
@@ -669,10 +682,11 @@
         private System.Windows.Forms.NumericUpDown numeric_seed_count;
         private System.Windows.Forms.Label label_count;
         private System.Windows.Forms.CheckBox cb_starved;
-        private System.Windows.Forms.CheckBox cb_limitkeys;
-        private System.Windows.Forms.CheckBox cb_shards;
         private System.Windows.Forms.CheckBox cb_analysis;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox cb_limitkeys;
+        private System.Windows.Forms.CheckBox cb_shards;
+        private System.Windows.Forms.Label label7;
     }
 }
 
