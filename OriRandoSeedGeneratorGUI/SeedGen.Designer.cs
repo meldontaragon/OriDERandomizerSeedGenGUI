@@ -525,7 +525,7 @@
             // cb_analysis
             // 
             this.cb_analysis.AutoSize = true;
-            this.cb_analysis.Enabled = false;
+            this.cb_analysis.Cursor = System.Windows.Forms.Cursors.Default;
             this.cb_analysis.Location = new System.Drawing.Point(12, 325);
             this.cb_analysis.Name = "cb_analysis";
             this.cb_analysis.Size = new System.Drawing.Size(64, 17);

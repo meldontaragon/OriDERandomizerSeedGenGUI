@@ -233,7 +233,7 @@
           <Requirement mode="normal">Bash+Grenade+WallJump</Requirement>
           <Requirement mode="lure">Bash+WallJump</Requirement>
           <Requirement mode="dbash">Bash</Requirement>
-          <Requirement mode="cdash">Dash</Requirement>
+          <Requirement mode="cdash-farming">Dash</Requirement>
         </Requirements>
       </Connection>
       <Connection>
@@ -357,7 +357,7 @@
           <Requirement mode="normal">EC+EC+EC+EC+DoubleJump</Requirement>
           <Requirement mode="normal">EC+EC+EC+EC+Bash</Requirement>
           <Requirement mode="normal">EC+EC+EC+EC+ChargeJump</Requirement>
-          <Requirement mode="cdash">EC+EC+EC+EC+Dash</Requirement>
+          <Requirement mode="cdash-farming">EC+EC+EC+EC+Dash</Requirement>
           <Requirement mode="extended-damage">EC+EC+EC+EC+WallJump+Glide</Requirement>
           <Requirement mode="glitched">EC+EC+EC+DoubleJump</Requirement>
           <Requirement mode="glitched">EC+EC+EC+Bash</Requirement>
@@ -485,7 +485,7 @@
         <Requirements>
           <Requirement mode="normal">ChargeFlame</Requirement>
           <Requirement mode="normal">Grenade</Requirement>
-          <Requirement mode="cdash">Dash</Requirement>
+          <Requirement mode="cdash-farming">Dash</Requirement>
         </Requirements>
       </Connection>
     </Connections>
@@ -568,6 +568,7 @@
         <Home name="upperGladesSpiderCavernPuzzle"/>
         <Target name="upperGladesSpiderHealth"/>
         <Requirements>
+          <Requirement mode="normal">Grenade</Requirement>
           <Requirement mode="normal">ChargeFlame</Requirement>
         </Requirements>
       </Connection>
@@ -591,6 +592,7 @@
         <Home name="upperGladesSpiderCavernPuzzle"/>
         <Target name="moonGrotto"/>
         <Requirements>
+          <Requirement mode="normal">Grenade</Requirement>
           <Requirement mode="normal">ChargeFlame</Requirement>
           <Requirement mode="normal">DoubleJump</Requirement>
         </Requirements>
@@ -726,11 +728,11 @@
           <Requirement mode="normal">Bash+Grenade</Requirement>
           <Requirement mode="normal">Glide+WallJump+Grenade</Requirement>
           <Requirement mode="normal">Bash+Grenade</Requirement>
-          <Requirement mode="cdash">ChargeJump+Climb+Dash</Requirement>
-          <Requirement mode="cdash">ChargeJump+WallJump+Dash</Requirement>
+          <Requirement mode="cdash-farming">ChargeJump+Climb+Dash</Requirement>
+          <Requirement mode="cdash-farming">ChargeJump+WallJump+Dash</Requirement>
           <Requirement mode="extended">DoubleJump+Grenade</Requirement>
           <Requirement mode="extended">DoubleJump+ChargeFlame</Requirement>
-          <Requirement mode="cdash">DoubleJump+Dash</Requirement>
+          <Requirement mode="cdash-farming">DoubleJump+Dash</Requirement>
         </Requirements>
       </Connection>      
     </Connections>
@@ -1703,7 +1705,7 @@
       </Connection>
       <Connection>
         <Home name="GumoHideout"/>
-        <Target name="LowerBlackroot"/>
+        <Target name="LowerBlackRoot"/>
         <Requirements>
           <Requirement mode="glitched">Dash</Requirement>
         </Requirements>
@@ -3266,6 +3268,11 @@
         <Item>EX100</Item>
       </Location>
       <Location>
+        <X>-1076</X>
+        <Y>32</Y>
+        <Item>KS</Item>
+      </Location>
+      <Location>
         <X>-1188</X>
         <Y>-100</Y>
         <Item>SKClimb</Item>
@@ -3274,7 +3281,7 @@
     <Connections>
       <Connection>
         <Home name="misty"/>
-        <Target name="mistyEnd"/>
+        <Target name="mistyPostClimb"/>
         <Requirements>
           <Requirement mode="normal">Climb+DoubleJump</Requirement>
           <Requirement mode="normal">ChargeJump</Requirement>
@@ -3315,8 +3322,8 @@
     </Locations>
     <Connections>
     </Connections>
-  </Area>  
-  <Area name="mistyEnd">
+  </Area>
+  <Area name="mistyPostClimb">
     <Locations>
       <Location>
         <X>-837</X>
@@ -3329,19 +3336,42 @@
         <Item>EX200</Item>
       </Location>
       <Location>
+        <X>-912</X>
+        <Y>-36</Y>
+        <Item>KS</Item>
+      </Location>
+      <Location>
+        <X>-768</X>
+        <Y>-144</Y>
+        <Item>KS</Item>
+      </Location>      
+    </Locations>
+    <Connections>
+      <Connection>
+        <Home name="mistyPostClimb"/>
+        <Target name="mistyEndGrenade"/>
+        <Requirements>
+          <Requirement mode="normal">Grenade</Requirement>
+        </Requirements>
+      </Connection>
+      <Connection>
+        <Home name="mistyPostClimb"/>
+        <Target name="mistyEnd"/>
+        <Requirements>
+          <Requirement mode="normal">KS+KS+KS+KS</Requirement>
+        </Requirements>
+      </Connection>      
+    </Connections>
+  </Area>  
+  <Area name="mistyEnd">
+    <Locations>
+      <Location>
         <X>0</X>
         <Y>8</Y>
         <Item>EVForlornKey</Item>
       </Location>
     </Locations>
     <Connections>
-      <Connection>
-        <Home name="misty"/>
-        <Target name="mistyEndGrenade"/>
-        <Requirements>
-          <Requirement mode="normal">Grenade</Requirement>
-        </Requirements>
-      </Connection>  
     </Connections>
   </Area>
   <Area name="mistyEndGrenade">
