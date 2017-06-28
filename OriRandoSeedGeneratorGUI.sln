@@ -8,7 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6D4EC83-778D-4361-808D-29EC453298F3}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		OriDERandoSeedGeneratorTutorial.pdf = OriDERandoSeedGeneratorTutorial.pdf
 		README.md = README.md
+		Using the Ori DE Randomizer Graphical Seed Generator.docx = Using the Ori DE Randomizer Graphical Seed Generator.docx
 	EndProjectSection
 EndProject
 Global
