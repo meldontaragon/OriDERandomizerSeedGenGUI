@@ -40,9 +40,8 @@
             this.cb_glitched = new System.Windows.Forms.CheckBox();
             this.button_random = new System.Windows.Forms.Button();
             this.rb_casual = new System.Windows.Forms.RadioButton();
-            this.rb_normal = new System.Windows.Forms.RadioButton();
-            this.rb_dboost = new System.Windows.Forms.RadioButton();
-            this.rb_extend = new System.Windows.Forms.RadioButton();
+            this.rb_standard = new System.Windows.Forms.RadioButton();
+            this.rb_expert = new System.Windows.Forms.RadioButton();
             this.rb_hard = new System.Windows.Forms.RadioButton();
             this.rb_ohko = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,10 +71,16 @@
             this.label_count = new System.Windows.Forms.Label();
             this.cb_starved = new System.Windows.Forms.CheckBox();
             this.cb_analysis = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.cb_limitkeys = new System.Windows.Forms.CheckBox();
             this.cb_shards = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.rb_master = new System.Windows.Forms.RadioButton();
+            this.cb_extreme = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cb_trees = new System.Windows.Forms.CheckBox();
+            this.cb_loc_analysis = new System.Windows.Forms.CheckBox();
+            this.combo_diff = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_seed_count)).BeginInit();
             this.SuspendLayout();
@@ -133,7 +138,7 @@
             // cb_timed
             // 
             this.cb_timed.AutoSize = true;
-            this.cb_timed.Location = new System.Drawing.Point(128, 279);
+            this.cb_timed.Location = new System.Drawing.Point(128, 301);
             this.cb_timed.Name = "cb_timed";
             this.cb_timed.Size = new System.Drawing.Size(84, 17);
             this.cb_timed.TabIndex = 6;
@@ -143,7 +148,7 @@
             // cb_hard_lure
             // 
             this.cb_hard_lure.AutoSize = true;
-            this.cb_hard_lure.Location = new System.Drawing.Point(128, 302);
+            this.cb_hard_lure.Location = new System.Drawing.Point(128, 324);
             this.cb_hard_lure.Name = "cb_hard_lure";
             this.cb_hard_lure.Size = new System.Drawing.Size(73, 17);
             this.cb_hard_lure.TabIndex = 7;
@@ -153,7 +158,7 @@
             // cb_hard_dboost
             // 
             this.cb_hard_dboost.AutoSize = true;
-            this.cb_hard_dboost.Location = new System.Drawing.Point(128, 325);
+            this.cb_hard_dboost.Location = new System.Drawing.Point(128, 347);
             this.cb_hard_dboost.Name = "cb_hard_dboost";
             this.cb_hard_dboost.Size = new System.Drawing.Size(122, 17);
             this.cb_hard_dboost.TabIndex = 8;
@@ -163,7 +168,7 @@
             // cb_glitched
             // 
             this.cb_glitched.AutoSize = true;
-            this.cb_glitched.Location = new System.Drawing.Point(128, 348);
+            this.cb_glitched.Location = new System.Drawing.Point(128, 370);
             this.cb_glitched.Name = "cb_glitched";
             this.cb_glitched.Size = new System.Drawing.Size(65, 17);
             this.cb_glitched.TabIndex = 9;
@@ -172,11 +177,11 @@
             // 
             // button_random
             // 
-            this.button_random.Location = new System.Drawing.Point(143, 12);
+            this.button_random.Location = new System.Drawing.Point(278, 11);
             this.button_random.Name = "button_random";
-            this.button_random.Size = new System.Drawing.Size(67, 23);
+            this.button_random.Size = new System.Drawing.Size(88, 23);
             this.button_random.TabIndex = 11;
-            this.button_random.Text = "Random";
+            this.button_random.Text = "Random Gen";
             this.button_random.UseVisualStyleBackColor = true;
             this.button_random.Click += new System.EventHandler(this.button_random_Click);
             // 
@@ -193,38 +198,27 @@
             this.rb_casual.UseVisualStyleBackColor = true;
             this.rb_casual.CheckedChanged += new System.EventHandler(this.rb_casual_CheckedChanged);
             // 
-            // rb_normal
+            // rb_standard
             // 
-            this.rb_normal.AutoSize = true;
-            this.rb_normal.Location = new System.Drawing.Point(15, 117);
-            this.rb_normal.Name = "rb_normal";
-            this.rb_normal.Size = new System.Drawing.Size(58, 17);
-            this.rb_normal.TabIndex = 13;
-            this.rb_normal.Text = "Normal";
-            this.rb_normal.UseVisualStyleBackColor = true;
-            this.rb_normal.CheckedChanged += new System.EventHandler(this.rb_normal_CheckedChanged);
+            this.rb_standard.AutoSize = true;
+            this.rb_standard.Location = new System.Drawing.Point(15, 117);
+            this.rb_standard.Name = "rb_standard";
+            this.rb_standard.Size = new System.Drawing.Size(68, 17);
+            this.rb_standard.TabIndex = 13;
+            this.rb_standard.Text = "Standard";
+            this.rb_standard.UseVisualStyleBackColor = true;
+            this.rb_standard.CheckedChanged += new System.EventHandler(this.rb_normal_CheckedChanged);
             // 
-            // rb_dboost
+            // rb_expert
             // 
-            this.rb_dboost.AutoSize = true;
-            this.rb_dboost.Location = new System.Drawing.Point(15, 140);
-            this.rb_dboost.Name = "rb_dboost";
-            this.rb_dboost.Size = new System.Drawing.Size(95, 17);
-            this.rb_dboost.TabIndex = 14;
-            this.rb_dboost.Text = "Damage Boost";
-            this.rb_dboost.UseVisualStyleBackColor = true;
-            this.rb_dboost.CheckedChanged += new System.EventHandler(this.rb_dboost_CheckedChanged);
-            // 
-            // rb_extend
-            // 
-            this.rb_extend.AutoSize = true;
-            this.rb_extend.Location = new System.Drawing.Point(15, 163);
-            this.rb_extend.Name = "rb_extend";
-            this.rb_extend.Size = new System.Drawing.Size(70, 17);
-            this.rb_extend.TabIndex = 15;
-            this.rb_extend.Text = "Extended";
-            this.rb_extend.UseVisualStyleBackColor = true;
-            this.rb_extend.CheckedChanged += new System.EventHandler(this.rb_extend_CheckedChanged);
+            this.rb_expert.AutoSize = true;
+            this.rb_expert.Location = new System.Drawing.Point(15, 140);
+            this.rb_expert.Name = "rb_expert";
+            this.rb_expert.Size = new System.Drawing.Size(55, 17);
+            this.rb_expert.TabIndex = 15;
+            this.rb_expert.Text = "Expert";
+            this.rb_expert.UseVisualStyleBackColor = true;
+            this.rb_expert.CheckedChanged += new System.EventHandler(this.rb_extend_CheckedChanged);
             // 
             // rb_hard
             // 
@@ -291,12 +285,11 @@
             this.cb_mapstone.AutoSize = true;
             this.cb_mapstone.Checked = true;
             this.cb_mapstone.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_mapstone.Enabled = false;
             this.cb_mapstone.Location = new System.Drawing.Point(285, 233);
             this.cb_mapstone.Name = "cb_mapstone";
-            this.cb_mapstone.Size = new System.Drawing.Size(83, 17);
+            this.cb_mapstone.Size = new System.Drawing.Size(110, 17);
             this.cb_mapstone.TabIndex = 25;
-            this.cb_mapstone.Text = "Map Stones";
+            this.cb_mapstone.Text = "Progressive Maps";
             this.cb_mapstone.UseVisualStyleBackColor = true;
             // 
             // cb_extra_pickups
@@ -304,7 +297,6 @@
             this.cb_extra_pickups.AutoSize = true;
             this.cb_extra_pickups.Checked = true;
             this.cb_extra_pickups.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_extra_pickups.Enabled = false;
             this.cb_extra_pickups.Location = new System.Drawing.Point(285, 210);
             this.cb_extra_pickups.Name = "cb_extra_pickups";
             this.cb_extra_pickups.Size = new System.Drawing.Size(91, 17);
@@ -317,7 +309,6 @@
             this.cb_plants.AutoSize = true;
             this.cb_plants.Checked = true;
             this.cb_plants.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_plants.Enabled = false;
             this.cb_plants.Location = new System.Drawing.Point(285, 187);
             this.cb_plants.Name = "cb_plants";
             this.cb_plants.Size = new System.Drawing.Size(96, 17);
@@ -461,18 +452,18 @@
             // 
             // button_generate
             // 
-            this.button_generate.Location = new System.Drawing.Point(329, 12);
+            this.button_generate.Location = new System.Drawing.Point(235, 12);
             this.button_generate.Name = "button_generate";
-            this.button_generate.Size = new System.Drawing.Size(77, 23);
+            this.button_generate.Size = new System.Drawing.Size(37, 23);
             this.button_generate.TabIndex = 46;
-            this.button_generate.Text = "Generate";
+            this.button_generate.Text = "Gen";
             this.button_generate.UseVisualStyleBackColor = true;
             this.button_generate.Click += new System.EventHandler(this.button_generate_Click);
             // 
             // link_help
             // 
             this.link_help.AutoSize = true;
-            this.link_help.Location = new System.Drawing.Point(12, 352);
+            this.link_help.Location = new System.Drawing.Point(369, 17);
             this.link_help.Name = "link_help";
             this.link_help.Size = new System.Drawing.Size(37, 13);
             this.link_help.TabIndex = 48;
@@ -482,7 +473,7 @@
             // 
             // numeric_seed_count
             // 
-            this.numeric_seed_count.Location = new System.Drawing.Point(261, 14);
+            this.numeric_seed_count.Location = new System.Drawing.Point(179, 14);
             this.numeric_seed_count.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -505,7 +496,7 @@
             // label_count
             // 
             this.label_count.AutoSize = true;
-            this.label_count.Location = new System.Drawing.Point(223, 17);
+            this.label_count.Location = new System.Drawing.Point(141, 17);
             this.label_count.Name = "label_count";
             this.label_count.Size = new System.Drawing.Size(35, 13);
             this.label_count.TabIndex = 49;
@@ -514,7 +505,6 @@
             // cb_starved
             // 
             this.cb_starved.AutoSize = true;
-            this.cb_starved.Enabled = false;
             this.cb_starved.Location = new System.Drawing.Point(285, 256);
             this.cb_starved.Name = "cb_starved";
             this.cb_starved.Size = new System.Drawing.Size(63, 17);
@@ -526,27 +516,18 @@
             // 
             this.cb_analysis.AutoSize = true;
             this.cb_analysis.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cb_analysis.Location = new System.Drawing.Point(12, 325);
+            this.cb_analysis.Enabled = false;
+            this.cb_analysis.Location = new System.Drawing.Point(12, 347);
             this.cb_analysis.Name = "cb_analysis";
             this.cb_analysis.Size = new System.Drawing.Size(64, 17);
             this.cb_analysis.TabIndex = 54;
             this.cb_analysis.Text = "Analysis";
             this.cb_analysis.UseVisualStyleBackColor = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 309);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 13);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "Other Options";
-            // 
             // cb_limitkeys
             // 
             this.cb_limitkeys.AutoSize = true;
-            this.cb_limitkeys.Enabled = false;
-            this.cb_limitkeys.Location = new System.Drawing.Point(285, 348);
+            this.cb_limitkeys.Location = new System.Drawing.Point(285, 325);
             this.cb_limitkeys.Name = "cb_limitkeys";
             this.cb_limitkeys.Size = new System.Drawing.Size(73, 17);
             this.cb_limitkeys.TabIndex = 52;
@@ -557,8 +538,7 @@
             // cb_shards
             // 
             this.cb_shards.AutoSize = true;
-            this.cb_shards.Enabled = false;
-            this.cb_shards.Location = new System.Drawing.Point(285, 325);
+            this.cb_shards.Location = new System.Drawing.Point(285, 302);
             this.cb_shards.Name = "cb_shards";
             this.cb_shards.Size = new System.Drawing.Size(59, 17);
             this.cb_shards.TabIndex = 53;
@@ -569,19 +549,101 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(282, 302);
+            this.label7.Location = new System.Drawing.Point(282, 280);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 13);
             this.label7.TabIndex = 56;
             this.label7.Text = "Key Options";
             // 
+            // rb_master
+            // 
+            this.rb_master.AutoSize = true;
+            this.rb_master.Location = new System.Drawing.Point(15, 163);
+            this.rb_master.Name = "rb_master";
+            this.rb_master.Size = new System.Drawing.Size(57, 17);
+            this.rb_master.TabIndex = 57;
+            this.rb_master.Text = "Master";
+            this.rb_master.UseVisualStyleBackColor = true;
+            this.rb_master.CheckedChanged += new System.EventHandler(this.rb_master_CheckedChanged);
+            // 
+            // cb_extreme
+            // 
+            this.cb_extreme.AutoSize = true;
+            this.cb_extreme.Location = new System.Drawing.Point(128, 278);
+            this.cb_extreme.Name = "cb_extreme";
+            this.cb_extreme.Size = new System.Drawing.Size(64, 17);
+            this.cb_extreme.TabIndex = 59;
+            this.cb_extreme.Text = "Extreme";
+            this.cb_extreme.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 303);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 13);
+            this.label8.TabIndex = 61;
+            this.label8.Text = "Other Options";
+            // 
+            // cb_trees
+            // 
+            this.cb_trees.AutoSize = true;
+            this.cb_trees.Checked = true;
+            this.cb_trees.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_trees.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cb_trees.Location = new System.Drawing.Point(12, 324);
+            this.cb_trees.Name = "cb_trees";
+            this.cb_trees.Size = new System.Drawing.Size(83, 17);
+            this.cb_trees.TabIndex = 60;
+            this.cb_trees.Text = "Force Trees";
+            this.cb_trees.UseVisualStyleBackColor = true;
+            // 
+            // cb_loc_analysis
+            // 
+            this.cb_loc_analysis.AutoSize = true;
+            this.cb_loc_analysis.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cb_loc_analysis.Enabled = false;
+            this.cb_loc_analysis.Location = new System.Drawing.Point(12, 370);
+            this.cb_loc_analysis.Name = "cb_loc_analysis";
+            this.cb_loc_analysis.Size = new System.Drawing.Size(108, 17);
+            this.cb_loc_analysis.TabIndex = 62;
+            this.cb_loc_analysis.Text = "Location Analysis";
+            this.cb_loc_analysis.UseVisualStyleBackColor = true;
+            // 
+            // combo_diff
+            // 
+            this.combo_diff.FormattingEnabled = true;
+            this.combo_diff.Items.AddRange(new object[] {
+            "",
+            "Easy",
+            "Hard"});
+            this.combo_diff.Location = new System.Drawing.Point(285, 370);
+            this.combo_diff.Name = "combo_diff";
+            this.combo_diff.Size = new System.Drawing.Size(108, 21);
+            this.combo_diff.TabIndex = 64;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(282, 353);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 13);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "Path Difficulty";
+            // 
             // SeedGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 380);
+            this.ClientSize = new System.Drawing.Size(418, 404);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.combo_diff);
+            this.Controls.Add(this.cb_loc_analysis);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cb_trees);
+            this.Controls.Add(this.cb_extreme);
+            this.Controls.Add(this.rb_master);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_analysis);
             this.Controls.Add(this.cb_shards);
             this.Controls.Add(this.cb_limitkeys);
@@ -612,9 +674,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rb_ohko);
             this.Controls.Add(this.rb_hard);
-            this.Controls.Add(this.rb_extend);
-            this.Controls.Add(this.rb_dboost);
-            this.Controls.Add(this.rb_normal);
+            this.Controls.Add(this.rb_expert);
+            this.Controls.Add(this.rb_standard);
             this.Controls.Add(this.rb_casual);
             this.Controls.Add(this.button_random);
             this.Controls.Add(this.cb_glitched);
@@ -628,7 +689,6 @@
             this.Controls.Add(this.cb_speed);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(434, 419);
             this.MinimumSize = new System.Drawing.Size(434, 419);
             this.Name = "SeedGen";
             this.Text = "Ori DE Rando: Seed Generator";
@@ -651,9 +711,8 @@
         private System.Windows.Forms.CheckBox cb_glitched;
         private System.Windows.Forms.Button button_random;
         private System.Windows.Forms.RadioButton rb_casual;
-        private System.Windows.Forms.RadioButton rb_normal;
-        private System.Windows.Forms.RadioButton rb_dboost;
-        private System.Windows.Forms.RadioButton rb_extend;
+        private System.Windows.Forms.RadioButton rb_standard;
+        private System.Windows.Forms.RadioButton rb_expert;
         private System.Windows.Forms.RadioButton rb_hard;
         private System.Windows.Forms.RadioButton rb_ohko;
         private System.Windows.Forms.Label label1;
@@ -683,10 +742,16 @@
         private System.Windows.Forms.Label label_count;
         private System.Windows.Forms.CheckBox cb_starved;
         private System.Windows.Forms.CheckBox cb_analysis;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox cb_limitkeys;
         private System.Windows.Forms.CheckBox cb_shards;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton rb_master;
+        private System.Windows.Forms.CheckBox cb_extreme;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox cb_trees;
+        private System.Windows.Forms.CheckBox cb_loc_analysis;
+        private System.Windows.Forms.ComboBox combo_diff;
+        private System.Windows.Forms.Label label9;
     }
 }
 

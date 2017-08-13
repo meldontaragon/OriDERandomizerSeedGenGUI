@@ -24,7 +24,7 @@ namespace OriRandoSeedGeneratorGUI
 
             Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 
-            Text = this.Text.ToString() + " - v" + v.Major + "." + v.Minor + "." + v.Build;
+            Text = this.Text.ToString() + " - v" + v.ToString();
             WriteToLog("Program starting up.");
 
             rand = new Random(DateTime.Now.Second);
@@ -43,14 +43,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = false;
             cb_ohko.Checked = false;
@@ -70,14 +68,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = false;
             cb_ohko.Checked = false;
@@ -97,14 +93,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = false;
             cb_ohko.Checked = false;
@@ -124,14 +118,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = false;
             cb_ohko.Checked = false;
@@ -151,14 +143,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = true;
             cb_ohko.Checked = false;
@@ -178,14 +168,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = true;
             cb_ohko.Checked = true;
@@ -205,14 +193,12 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
+
             cb_timed.Checked = false;
             cb_hard_lure.Checked = false;
             cb_hard_dboost.Checked = false;
             cb_glitched.Checked = false;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = true;
             cb_ohko.Checked = true;
@@ -232,14 +218,11 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = false;
             cb_timed.Checked = true;
             cb_hard_lure.Checked = true;
             cb_hard_dboost.Checked = true;
             cb_glitched.Checked = true;
-
-            cb_extra_pickups.Checked = true;
-            cb_plants.Checked = true;
-            cb_mapstone.Checked = true;
 
             cb_hard.Checked = false;
             cb_ohko.Checked = false;
@@ -251,6 +234,30 @@ namespace OriRandoSeedGeneratorGUI
         private void rb_custom_CheckedChanged(object sender, EventArgs e)
         {
             EnableCheckBoxes();
+        }
+
+        private void rb_master_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = true;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
+
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = true;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
+
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
+
+            DisableCheckBoxes();
         }
         #endregion
         // end of radio button group
@@ -266,17 +273,24 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Enabled = false;
             cb_ext_dboost.Enabled = false;
+            cb_extreme.Enabled = false;
             cb_timed.Enabled = false;
             cb_hard_dboost.Enabled = false;
             cb_hard_lure.Enabled = false;
             cb_glitched.Enabled = false;
 
+            //these don't need to get disabled
+            /*
             cb_mapstone.Enabled = false;
             cb_plants.Enabled = false;
             cb_extra_pickups.Enabled = false;
             cb_starved.Enabled = false;
+
             cb_limitkeys.Enabled = false;
             cb_shards.Enabled = false;
+
+            cb_trees.Enabled = false;
+            */
 
             cb_hard.Enabled = false;
             cb_ohko.Enabled = false;
@@ -294,34 +308,48 @@ namespace OriRandoSeedGeneratorGUI
 
             cb_extended.Enabled = true;
             cb_ext_dboost.Enabled = true;
+            cb_extreme.Enabled = true;
             cb_timed.Enabled = true;
             cb_hard_dboost.Enabled = true;
             cb_hard_lure.Enabled = true;
             cb_glitched.Enabled = true;
 
-            //not enabled by Sigma yet
-            cb_mapstone.Enabled = false;
-
             cb_plants.Enabled = true;
             cb_extra_pickups.Enabled = true;
             cb_starved.Enabled = true;
+            cb_mapstone.Enabled = true;
+
             cb_limitkeys.Enabled = true;
             cb_shards.Enabled = true;
+            cb_trees.Enabled = false;
 
             cb_hard.Enabled = true;
             cb_ohko.Enabled = true;
             cb_0xp.Enabled = true;
         }
-        
+
         private void button_random_Click(object sender, EventArgs e)
         {
-            int next = rand.Next(1, 999999999);
-            numeric_seed_number.Value = next;
+            int next;
+            for (int i = 0; i < numeric_seed_count.Value; i++)
+            {
+                next = rand.Next(1, 999999999);
+                numeric_seed_number.Value = next;
+                generate_seed();
+            }
+            MessageBox.Show("Seed(s) Created.", "Success");
+
         }
-        
+
         private void button_generate_Click(object sender, EventArgs e)
         {
-            generate_seed();
+            for (int i = 0; i < numeric_seed_count.Value; i++)
+            {
+                generate_seed();
+                numeric_seed_number.Value += 1;
+            }
+            MessageBox.Show("Seed(s) Created.", "Success");
+
         }
 
         //this only generates a seed (with a spoiler)
@@ -391,7 +419,6 @@ namespace OriRandoSeedGeneratorGUI
             proc.StandardInput.Close();
             proc.WaitForExit();
 
-            MessageBox.Show("Seed Created.", "Success");
         }
         
         private string generate_logic_string()
@@ -400,35 +427,35 @@ namespace OriRandoSeedGeneratorGUI
             // figure out which logic grouping to use
             if (rb_casual.Checked)
             {
-                logic_call = "--logic casual ";
+                logic_call = "--preset casual ";
             }
-            else if (rb_normal.Checked)
+            else if (rb_standard.Checked)
             {
-                logic_call = "--logic normal ";
+                logic_call = "--preset standard ";
             }
-            else if (rb_dboost.Checked)
+            else if (rb_expert.Checked)
             {
-                logic_call = "--logic dboost ";
+                logic_call = "--preset expert ";
             }
-            else if (rb_extend.Checked)
+            else if (rb_master.Checked)
             {
-                logic_call = "--logic extended ";
+                logic_call = "--preset master ";
             }
             else if (rb_hard.Checked)
             {
-                logic_call = "--logic hard ";
+                logic_call = "--preset hard ";
             }
             else if (rb_ohko.Checked)
             {
-                logic_call = "--logic ohko ";
+                logic_call = "--preset ohko ";
             }
             else if (rb_0xp.Checked)
             {
-                logic_call = "--logic 0xp ";
+                logic_call = "--preset 0xp ";
             }
             else if (rb_glitched.Checked)
             {
-                logic_call = "--logic glitched ";
+                logic_call = "--preset glitched ";
             }
             else if (rb_custom.Checked)
             {
@@ -525,9 +552,38 @@ namespace OriRandoSeedGeneratorGUI
             {
                 options_call += "--limitkeys ";
             }
+            if (!cb_mapstone.Checked)
+            {
+                options_call += "--non-progressive-mapstones ";
+            }
+            if (cb_trees.Checked)
+            {
+                options_call += "--force-trees ";
+            }
+
+            if (combo_diff.Text == "Easy")
+            {
+                options_call += "--prefer-path-difficulty easy ";
+
+            }
+            else if (combo_diff.Text == "Hard")
+            {
+                options_call += "--prefer-path-difficulty easy ";
+            }
+            else
+            {
+
+            }
+
+
+
             if (cb_analysis.Checked)
             {
                 options_call += "--analysis ";
+            }
+            if (cb_loc_analysis.Checked)
+            {
+                options_call += "--loc-analysis ";
             }
 
             return options_call;
@@ -536,7 +592,7 @@ namespace OriRandoSeedGeneratorGUI
         {
             string seed_call;
 
-            seed_call = "--seed " + numeric_seed_number.Value.ToString() + " --count " + numeric_seed_count.Value.ToString();
+            seed_call = "--seed " + numeric_seed_number.Value.ToString();
             return seed_call;
         }
 
@@ -592,6 +648,8 @@ namespace OriRandoSeedGeneratorGUI
             if (cb_limitkeys.Checked)
                 cb_shards.Checked = false;
         }
+
+
     }
 }
 
