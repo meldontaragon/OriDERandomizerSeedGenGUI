@@ -27,7 +27,10 @@ namespace OriRandoSeedGeneratorGUI
             Text = this.Text.ToString() + " - v" + v.ToString();
             WriteToLog("Program starting up.");
 
-            rand = new Random(DateTime.Now.Second);
+            TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
+            int secondsSinceEpoch = (int)t.TotalSeconds;
+
+            rand = new Random(secondsSinceEpoch);
         }
 
         //start of radio buttom group
