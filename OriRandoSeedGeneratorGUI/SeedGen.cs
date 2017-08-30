@@ -18,257 +18,257 @@ namespace OriRandoSeedGeneratorGUI
 
 		public SeedGen()
 		{
-			InitializeComponent();
-			DisableCheckBoxes();
-			text_box_directory.Text = Application.StartupPath.ToString();
+            InitializeComponent();
+            DisableCheckBoxes();
+            text_box_directory.Text = Application.StartupPath.ToString();
 
-			Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+            Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 
-			Text = this.Text.ToString() + " - v" + v.ToString();
-			WriteToLog("Program starting up.");
+            Text = this.Text.ToString() + " - v" + v.ToString();
+            WriteToLog("Program starting up.");
 
-/*
-			TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
-			int secondsSinceEpoch = (int) t.TotalSeconds;
-*/
-    	int ticks = Environment.TickCount();
-			rand = new Random(ticks);
-		}
+            /*
+                        TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
+                        int secondsSinceEpoch = (int) t.TotalSeconds;
+            */
+            int ticks = Environment.TickCount;
+            rand = new Random(ticks);
+        }
 
-		//start of radio buttom group
-		#region RadioButton
-		private void rb_casual_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = false;
-			cb_lure.Checked = false;
-			cb_dboost.Checked = false;
-			cb_dbash.Checked = false;
-			cb_cdash.Checked = false;
+        //start of radio buttom group
+        #region RadioButton
+        private void rb_casual_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = false;
+            cb_lure.Checked = false;
+            cb_dboost.Checked = false;
+            cb_dbash.Checked = false;
+            cb_cdash.Checked = false;
 
-			cb_extended.Checked = false;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = false;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_normal_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = false;
-			cb_dbash.Checked = false;
-			cb_cdash.Checked = false;
+        private void rb_normal_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = false;
+            cb_dbash.Checked = false;
+            cb_cdash.Checked = false;
 
-			cb_extended.Checked = false;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = false;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_dboost_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = true;
-			cb_dbash.Checked = false;
-			cb_cdash.Checked = false;
+        private void rb_dboost_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = true;
+            cb_dbash.Checked = false;
+            cb_cdash.Checked = false;
 
-			cb_extended.Checked = false;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = false;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_extend_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = true;
-			cb_dbash.Checked = true;
-			cb_cdash.Checked = true;
+        private void rb_extend_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = true;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
 
-			cb_extended.Checked = true;
-			cb_ext_dboost.Checked = true;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_hard_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = false;
-			cb_dbash.Checked = true;
-			cb_cdash.Checked = true;
+        private void rb_hard_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = false;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
 
-			cb_extended.Checked = true;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = true;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = true;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_ohko_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = false;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = false;
-			cb_dbash.Checked = true;
-			cb_cdash.Checked = true;
+        private void rb_ohko_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = false;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = false;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
 
-			cb_extended.Checked = true;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = true;
-			cb_ohko.Checked = true;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = true;
+            cb_ohko.Checked = true;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_0xp_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = false;
-			cb_dbash.Checked = false;
-			cb_cdash.Checked = false;
+        private void rb_0xp_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = false;
+            cb_dbash.Checked = false;
+            cb_cdash.Checked = false;
 
-			cb_extended.Checked = false;
-			cb_ext_dboost.Checked = false;
-			cb_extreme.Checked = false;
+            cb_extended.Checked = false;
+            cb_ext_dboost.Checked = false;
+            cb_extreme.Checked = false;
 
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = true;
-			cb_ohko.Checked = true;
-			cb_0xp.Checked = true;
+            cb_hard.Checked = true;
+            cb_ohko.Checked = true;
+            cb_0xp.Checked = true;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_glitched_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = true;
-			cb_dbash.Checked = true;
-			cb_cdash.Checked = true;
+        private void rb_glitched_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = true;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
 
-			cb_extended.Checked = true;
-			cb_ext_dboost.Checked = true;
-			cb_extreme.Checked = false;
-			cb_timed.Checked = true;
-			cb_hard_lure.Checked = true;
-			cb_hard_dboost.Checked = true;
-			cb_glitched.Checked = true;
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = false;
+            cb_timed.Checked = true;
+            cb_hard_lure.Checked = true;
+            cb_hard_dboost.Checked = true;
+            cb_glitched.Checked = true;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
+            DisableCheckBoxes();
+        }
 
-		private void rb_custom_CheckedChanged(object sender, EventArgs e)
-		{
-			EnableCheckBoxes();
-		}
+        private void rb_custom_CheckedChanged(object sender, EventArgs e)
+        {
+            EnableCheckBoxes();
+        }
 
-		private void rb_master_CheckedChanged(object sender, EventArgs e)
-		{
-			cb_light_dboost.Checked = true;
-			cb_speed.Checked = true;
-			cb_lure.Checked = true;
-			cb_dboost.Checked = true;
-			cb_dbash.Checked = true;
-			cb_cdash.Checked = true;
+        private void rb_master_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_light_dboost.Checked = true;
+            cb_speed.Checked = true;
+            cb_lure.Checked = true;
+            cb_dboost.Checked = true;
+            cb_dbash.Checked = true;
+            cb_cdash.Checked = true;
 
-			cb_extended.Checked = true;
-			cb_ext_dboost.Checked = true;
-			cb_extreme.Checked = true;
-			cb_timed.Checked = false;
-			cb_hard_lure.Checked = false;
-			cb_hard_dboost.Checked = false;
-			cb_glitched.Checked = false;
+            cb_extended.Checked = true;
+            cb_ext_dboost.Checked = true;
+            cb_extreme.Checked = true;
+            cb_timed.Checked = false;
+            cb_hard_lure.Checked = false;
+            cb_hard_dboost.Checked = false;
+            cb_glitched.Checked = false;
 
-			cb_hard.Checked = false;
-			cb_ohko.Checked = false;
-			cb_0xp.Checked = false;
+            cb_hard.Checked = false;
+            cb_ohko.Checked = false;
+            cb_0xp.Checked = false;
 
-			DisableCheckBoxes();
-		}
-		#endregion
-		// end of radio button group
+            DisableCheckBoxes();
+        }
+        #endregion
+        // end of radio button group
 
-		private void DisableCheckBoxes()
-		{
+        private void DisableCheckBoxes()
+        {
 			cb_light_dboost.Enabled = false;
 			cb_speed.Enabled = false;
 			cb_lure.Enabled = false;
