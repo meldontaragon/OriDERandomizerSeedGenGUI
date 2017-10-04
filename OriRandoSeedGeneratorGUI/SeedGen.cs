@@ -26,18 +26,14 @@ namespace OriRandoSeedGeneratorGUI
 
             Text = this.Text.ToString() + " - v" + v.ToString();
             WriteToLog("Program starting up.");
-
-            /*
-                        TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
-                        int secondsSinceEpoch = (int) t.TotalSeconds;
-            */
+                      
             int ticks = Environment.TickCount;
             rand = new Random(ticks);
         }
 
         //start of radio buttom group
         #region RadioButton
-        private void rb_casual_CheckedChanged(object sender, EventArgs e)
+        private void set_casual()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = false;
@@ -45,6 +41,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = false;
             cb_dbash.Checked = false;
             cb_cdash.Checked = false;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
@@ -62,7 +59,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_normal_CheckedChanged(object sender, EventArgs e)
+        private void set_standard()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -70,6 +67,8 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = false;
             cb_dbash.Checked = false;
             cb_cdash.Checked = false;
+            cb_cdash_farming.Checked = false;
+
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
@@ -87,32 +86,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_dboost_CheckedChanged(object sender, EventArgs e)
-        {
-            cb_light_dboost.Checked = true;
-            cb_speed.Checked = true;
-            cb_lure.Checked = true;
-            cb_dboost.Checked = true;
-            cb_dbash.Checked = false;
-            cb_cdash.Checked = false;
-
-            cb_extended.Checked = false;
-            cb_ext_dboost.Checked = false;
-            cb_extreme.Checked = false;
-
-            cb_timed.Checked = false;
-            cb_hard_lure.Checked = false;
-            cb_hard_dboost.Checked = false;
-            cb_glitched.Checked = false;
-
-            cb_hard.Checked = false;
-            cb_ohko.Checked = false;
-            cb_0xp.Checked = false;
-
-            DisableCheckBoxes();
-        }
-
-        private void rb_extend_CheckedChanged(object sender, EventArgs e)
+        private void set_expert()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -120,6 +94,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = true;
             cb_dbash.Checked = true;
             cb_cdash.Checked = true;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = true;
@@ -137,7 +112,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_hard_CheckedChanged(object sender, EventArgs e)
+        private void set_hard()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -145,6 +120,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = false;
             cb_dbash.Checked = true;
             cb_cdash.Checked = true;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = false;
@@ -162,7 +138,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_ohko_CheckedChanged(object sender, EventArgs e)
+        private void set_ohko()
         {
             cb_light_dboost.Checked = false;
             cb_speed.Checked = true;
@@ -170,6 +146,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = false;
             cb_dbash.Checked = true;
             cb_cdash.Checked = true;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = false;
@@ -187,7 +164,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_0xp_CheckedChanged(object sender, EventArgs e)
+        private void set_zeroxp()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -195,6 +172,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = false;
             cb_dbash.Checked = false;
             cb_cdash.Checked = false;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = false;
             cb_ext_dboost.Checked = false;
@@ -212,7 +190,7 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_glitched_CheckedChanged(object sender, EventArgs e)
+        private void set_glitched()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -220,6 +198,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = true;
             cb_dbash.Checked = true;
             cb_cdash.Checked = true;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = true;
@@ -236,12 +215,12 @@ namespace OriRandoSeedGeneratorGUI
             DisableCheckBoxes();
         }
 
-        private void rb_custom_CheckedChanged(object sender, EventArgs e)
+        private void set_custom()
         {
             EnableCheckBoxes();
         }
 
-        private void rb_master_CheckedChanged(object sender, EventArgs e)
+        private void set_master()
         {
             cb_light_dboost.Checked = true;
             cb_speed.Checked = true;
@@ -249,6 +228,7 @@ namespace OriRandoSeedGeneratorGUI
             cb_dboost.Checked = true;
             cb_dbash.Checked = true;
             cb_cdash.Checked = true;
+            cb_cdash_farming.Checked = false;
 
             cb_extended.Checked = true;
             cb_ext_dboost.Checked = true;
@@ -275,8 +255,9 @@ namespace OriRandoSeedGeneratorGUI
 			cb_dboost.Enabled = false;
 			cb_dbash.Enabled = false;
 			cb_cdash.Enabled = false;
+            cb_cdash_farming.Enabled = false;
 
-			cb_extended.Enabled = false;
+            cb_extended.Enabled = false;
 			cb_ext_dboost.Enabled = false;
 			cb_extreme.Enabled = false;
 			cb_timed.Enabled = false;
@@ -290,9 +271,6 @@ namespace OriRandoSeedGeneratorGUI
 			   cb_plants.Enabled = false;
 			   cb_extra_pickups.Enabled = false;
 			   cb_starved.Enabled = false;
-
-			   cb_limitkeys.Enabled = false;
-			   cb_shards.Enabled = false;
 
 			   cb_trees.Enabled = false;
 			 */
@@ -310,8 +288,9 @@ namespace OriRandoSeedGeneratorGUI
 			cb_dboost.Enabled = true;
 			cb_dbash.Enabled = true;
 			cb_cdash.Enabled = true;
+            cb_cdash_farming.Enabled = true;
 
-			cb_extended.Enabled = true;
+            cb_extended.Enabled = true;
 			cb_ext_dboost.Enabled = true;
 			cb_extreme.Enabled = true;
 			cb_timed.Enabled = true;
@@ -324,8 +303,6 @@ namespace OriRandoSeedGeneratorGUI
 			cb_starved.Enabled = true;
 			cb_mapstone.Enabled = true;
 
-			cb_limitkeys.Enabled = true;
-			cb_shards.Enabled = true;
 			cb_trees.Enabled = false;
 
 			cb_hard.Enabled = true;
@@ -428,45 +405,45 @@ namespace OriRandoSeedGeneratorGUI
 		{
 			string logic_call = "";
 
-			// figure out which logic grouping to use
-			if (rb_casual.Checked)
-			{
-				logic_call = "--preset casual ";
-			}
-			else if (rb_standard.Checked)
-			{
-				logic_call = "--preset standard ";
-			}
-			else if (rb_expert.Checked)
-			{
-				logic_call = "--preset expert ";
-			}
-			else if (rb_master.Checked)
-			{
-				logic_call = "--preset master ";
-			}
-			else if (rb_hard.Checked)
-			{
-				logic_call = "--preset hard ";
-			}
-			else if (rb_ohko.Checked)
-			{
-				logic_call = "--preset ohko ";
-			}
-			else if (rb_0xp.Checked)
-			{
-				logic_call = "--preset 0xp ";
-			}
-			else if (rb_glitched.Checked)
-			{
-				logic_call = "--preset glitched ";
-			}
-			else if (rb_custom.Checked)
-			{
-				logic_call = "--custom-logic normal";
+            // figure out which logic grouping to use
+            if (logic_combobox.Text == "Casual")
+            {
+                logic_call = "--preset casual ";
+            }
+            else if (logic_combobox.Text == "Standard")
+            {
+                logic_call = "--preset standard ";
+            }
+            else if (logic_combobox.Text == "Expert")
+            {
+                logic_call = "--preset expert ";
+            }
+            else if (logic_combobox.Text == "Master")
+            {
+                logic_call = "--preset master ";
+            }
+            else if (logic_combobox.Text == "Hard")
+            {
+                logic_call = "--preset hard ";
+            }
+            else if (logic_combobox.Text == "OHKO")
+            {
+                logic_call = "--preset ohko ";
+            }
+            else if (logic_combobox.Text == "0 XP")
+            {
+                logic_call = "--preset 0xp ";
+            }
+            else if (logic_combobox.Text == "Glitched")
+            {
+                logic_call = "--preset glitched ";
+            }
+            else if (logic_combobox.Text == "Custom")
+            {
+                logic_call = "--custom-logic normal";
 
-				// get the custom logic options
-				if (cb_light_dboost.Checked)
+                // get the custom logic options
+                if (cb_light_dboost.Checked)
 				{
 					logic_call += ",dboost-light";
 				}
@@ -548,14 +525,20 @@ namespace OriRandoSeedGeneratorGUI
 			{
 				options_call += "--starved ";
 			}
-			if (cb_shards.Checked)
-			{
-				options_call += "--shards ";
-			}
-			if (cb_limitkeys.Checked)
-			{
-				options_call += "--limitkeys ";
-			}
+            switch (combo_mode.Text)
+            {
+                case "Shards":
+                    options_call += "--shards ";
+                    break;
+                case "LimitKeys":
+                    options_call += "--limitkeys ";
+                    break;
+                case "Clues":
+                    options_call += "--clues ";
+                    break;
+                case "Default":
+                    break;
+            }
 			if (!cb_mapstone.Checked)
 			{
 				options_call += "--non-progressive-mapstones ";
@@ -564,6 +547,10 @@ namespace OriRandoSeedGeneratorGUI
 			{
 				options_call += "--force-trees ";
 			}
+            if (!cb_teleporter.Checked)
+            {
+                options_call += "--no-teleporters ";
+            }
 
 			if (combo_diff.Text == "Easy")
 			{
@@ -576,8 +563,6 @@ namespace OriRandoSeedGeneratorGUI
 			else
 			{
 			}
-
-
 
 			if (cb_analysis.Checked)
 			{
@@ -642,20 +627,40 @@ namespace OriRandoSeedGeneratorGUI
 			System.Diagnostics.Process.Start("https://github.com/david-c-miller/OriDERandomizerSeedGenGUI/issues");
 		}
 
-		private void cb_shards_CheckedChanged(object sender, EventArgs e)
-		{
-			if (cb_shards.Checked)
-			{
-				cb_limitkeys.Checked = false;
-			}
-		}
+        private void logic_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (logic_combobox.Text)
+            {
+                case "Casual":
+                    set_casual();
+                    break;
+                case "Standard":
+                    set_standard();
+                    break;
+                case "Expert":
+                    set_expert();
+                    break;
+                case "Master":
+                    set_master();
+                    break;
+                case "Hard":
+                    set_hard();
+                    break;
+                case "OHKO":
+                    set_ohko();
+                    break;
+                case "0 XP":
+                    set_zeroxp();
+                    break;
+                case "Glitched":
+                    set_glitched();
+                    break;
+                case "Custom":
+                    set_custom();
+                    break;
+            }
 
-		private void cb_limitkeys_CheckedChanged(object sender, EventArgs e)
-		{
-			if (cb_limitkeys.Checked)
-			{
-				cb_shards.Checked = false;
-			}
-		}
-	}
+
+        }
+    }
 }
