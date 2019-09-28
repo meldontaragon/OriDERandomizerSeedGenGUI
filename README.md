@@ -1,25 +1,5 @@
 # Ori DE: Seed Generator GUI
 
-## Description
-This is a simple GUI that interfaces with the seed generator for the 
-Ori DE Randomizer (https://github.com/sigmasin/OriDERandomizer). This 
-uses the current version of seed generator (seed_gen.zip on the 
-releases page). This is included in the release (seed_generator.py and 
-areas.xml).
+**This project is no longer used because of the existance of the website seed gen**
 
-**THE CURRENT VERSION IS v2.0**
-
-## Prerequisites
-+ Python 2.7 (https://www.python.org/downloads/release/python-2713/)
-  - Currently this must be installed such that python.exe is added to your path so 
-    it can be called from command prompt
-+ .NET Framework 4.5 (https://www.microsoft.com/en-us/download/details.aspx?id=40779)
-
-## Help
-For any questions or issues please post here:
-https://github.com/david-c-miller/OriDERandomizerSeedGenGUI/issues
-
-## Thanks
-
-Thanks to SigmaSin (https://github.com/sigmasin) for creating the Ori DE 
-Randomizer!
+Please go here: https://orirando.com/ if you want to get seeds, dlls, and other information about the randomizer.
